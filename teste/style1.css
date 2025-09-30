@@ -1,0 +1,89 @@
+/* Seu código CSS inicial */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* --- ESTILOS DO CARROSSEL DE NAVEGAÇÃO --- */
+.carousel-nav {
+  display: flex;
+  justify-content: center; /* Alinha os links à esquerda */
+  gap: 25px;
+  list-style: none;
+  overflow-x: auto; /* Permite a rolagem horizontal */
+  -webkit-overflow-scrolling: touch; /* Melhoria de performance em iOS */
+  white-space: nowrap; /* Impede a quebra de linha dos links */
+  padding-bottom: 10px;
+}
+
+/* Esconde a barra de rolagem horizontal */
+.carousel-nav::-webkit-scrollbar {
+  display: none;
+}
+.carousel-nav {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(248, 245, 245);
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.7s;
+  flex-shrink: 0; /* Impede que os links encolham */
+}
+
+nav a:hover {
+  color: #0843b1;
+  text-decoration: underline;
+}
+
+/* Estilo para o link da página atual */
+.active-link {
+  color: #0843b1 !important;
+  text-decoration: underline !important;
+}
+
+/* Seu código para o conteúdo principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+h2 {
+  color: rgb(83, 83, 83);
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+  margin-top: 15px;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

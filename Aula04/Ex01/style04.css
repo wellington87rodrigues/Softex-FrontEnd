@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18;
+    padding: 20px
+}
+
+#pInicial{
+    color: blueviolet;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 10px;
+    padding: 10px 5px;
+    color: blueviolet;
+    background-color: darkgrey;
+    font-weight: bolder;
+    text-align: center;
+     margin-bottom: 10px;
+}
+
+button{
+    padding: 10px 5px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#resultado{
+    color: blueviolet;
+    background-color: darkgray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p{
+    margin: 10px;
+}
+
+span{
+    margin-left: 15px;
+    color: blueviolet;
+    font-weight: bold;
+}

@@ -1,0 +1,396 @@
+/* :root {
+  --cor-principal: #007bff;
+  --cor-secundaria: #6c757d;
+  --cor-sucesso: #28a745;
+  --cor-alerta: #ffc107;
+  --cor-erro: #dc3545;
+  --cor-fundo: #f8f9fa;
+  --cor-clara: #ffffff;
+  --cor-escura: #343a40;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-escura);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--cor-clara);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: var(--cor-principal);
+  margin-bottom: 25px;
+}
+
+.form-section,
+.table-section {
+  margin-bottom: 30px;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.student-form label {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.student-form button {
+  background-color: var(--cor-principal);
+  color: var(--cor-clara);
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-form button:hover {
+  background-color: #0056b3;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.results-table th,
+.results-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.results-table th {
+  background-color: var(--cor-principal);
+  color: var(--cor-clara);
+}
+
+.results-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.status-aprovado {
+  color: var(--cor-sucesso);
+  font-weight: bold;
+}
+.status-recuperacao {
+  color: var(--cor-alerta);
+  font-weight: bold;
+}
+.status-reprovado {
+  color: var(--cor-erro);
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .student-form {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .student-form input[type="text"] {
+    grid-column: span 4;
+  }
+  .student-form button {
+    grid-column: span 4;
+  }
+} */
+
+/*:root {
+  --cor-principal: #007bff;
+  --cor-secundaria: #6c757d;
+  --cor-sucesso: #28a745;
+  --cor-alerta: #ffc107;
+  --cor-erro: #dc3545;
+  --cor-fundo: #f8f9fa;
+  --cor-clara: #ffffff;
+  --cor-escura: #343a40;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-escura);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--cor-clara);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: var(--cor-principal);
+  margin-bottom: 25px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+ --- MUDANÇA 1: ESCONDE A TABELA INICIALMENTE --- 
+.table-section {
+  margin-bottom: 30px;
+  display: none; // Esconde a seção da tabela 
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.student-form label {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.student-form button {
+  background-color: var(--cor-principal);
+  color: var(--cor-clara);
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-form button:hover {
+  background-color: #0056b3;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.results-table th,
+.results-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.results-table th {
+  background-color: var(--cor-principal);
+  color: var(--cor-clara);
+}
+
+.results-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.status-aprovado {
+  color: var(--cor-sucesso);
+  font-weight: bold;
+}
+.status-recuperacao {
+  color: var(--cor-alerta);
+  font-weight: bold;
+}
+.status-reprovado {
+  color: var(--cor-erro);
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .student-form {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .student-form input[type="text"] {
+    grid-column: span 4;
+  }
+  .student-form button {
+    grid-column: span 4;
+  }
+}
+*/
+
+:root {
+  --cor-principal: #007bff;
+  --cor-secundaria: #6c757d;
+  --cor-sucesso: #28a745;
+  --cor-alerta: #ffc107;
+  --cor-erro: #dc3545;
+  --cor-fundo: #f8f9fa;
+  --cor-clara: #ffffff;
+  --cor-escura: #343a40;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-escura);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--cor-clara);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: var(--cor-principal);
+  margin-bottom: 25px;
+}
+
+.form-section {
+  margin-bottom: 10px;
+}
+
+.table-section {
+  margin-bottom: 30px;
+  display: none; /* Esconde a seção da tabela */
+}
+
+/* --- MUDANÇAS NO FORMULÁRIO --- */
+.student-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas para as notas */
+  gap: 15px;
+  align-items: end; /* Alinha os itens do grid pela base */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1; /* Ocupa todas as colunas */
+}
+
+.student-form label {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.student-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.student-form button {
+  grid-column: 1 / -1; /* Ocupa todas as colunas */
+  background-color: var(--cor-principal);
+  color: var(--cor-clara);
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Adicionado para espaçamento */
+}
+
+.student-form button:hover {
+  background-color: #0056b3;
+}
+
+/* --- Estilos da tabela permanecem os mesmos --- */
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.results-table th,
+.results-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.results-table th {
+  background-color: var(--cor-principal);
+  color: var(--cor-clara);
+}
+
+.results-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.status-aprovado {
+  color: var(--cor-sucesso);
+  font-weight: bold;
+}
+.status-recuperacao {
+  color: var(--cor-alerta);
+  font-weight: bold;
+}
+.status-reprovado {
+  color: var(--cor-erro);
+  font-weight: bold;
+}
+
+/* --- Responsividade aprimorada para o formulário --- */
+@media (max-width: 768px) {
+  .student-form {
+    grid-template-columns: 1fr; /* Coloca tudo em uma única coluna em telas menores */
+  }
+}
+@media (min-width: 769px) {
+  .student-form {
+    grid-template-columns: 2fr repeat(3, 1fr); /* Nome ocupa mais espaço, 3 notas */
+  }
+  .form-group.full-width {
+    grid-column: span 1; /* Retorna ao padrão para o nome do aluno */
+  }
+  .student-form .form-group:nth-child(1) {
+    /* O grupo do nome do aluno */
+    grid-column: span 2; /* Ocupa 2 colunas */
+  }
+}

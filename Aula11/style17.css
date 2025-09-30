@@ -1,0 +1,142 @@
+:root {
+  --cor-fundo-principal: #f0f2f5;
+  --cor-texto: #333;
+  --cor-primaria: #007bff;
+  --cor-secundaria: #fff;
+  --cor-borda: #ddd;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  background-color: var(--cor-secundaria);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#main-header {
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--cor-primaria);
+  margin-top: 10px;
+}
+
+h1,
+h2 {
+  color: var(--cor-primaria);
+  margin-bottom: 5px;
+}
+
+p {
+  color: var(--cor-texto);
+}
+
+.hobbies-section-resp {
+  display: none;
+}
+
+.hobbies-section,
+.hobbies-section-resp {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+}
+
+.hobbies-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.hobbies-section li {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input {
+  padding: 10px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #e0f7fa;
+  }
+
+  .container {
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hobbies-section ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

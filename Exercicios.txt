@@ -1,0 +1,174 @@
+Aula 02
+Atividade 1: Criando sua Primeira Página HTML
+Objetivo: Estruturar um site básico com títulos, parágrafos e botões.
+Tarefa: Crie um arquivo index.html
+Adicione: Um título (<h1>), Um subtítulo (<h2>), Dois parágrafos (<p>), Um botão (<button>)
+
+Atividade 2: Aplicando Estilo com CSS Externo
+Objetivo: Praticar a separação entre conteúdo e estilo.
+Tarefa: Crie um arquivo style.css e conecte ao HTML.
+Estilize os elementos com: Cor de fundo, Cor do texto, Fonte personalizada, Centralização do conteúdo (text-align), Efeito hover no botão
+
+Atividade 3: Adicionando Interatividade com JavaScript
+Objetivo: Criar uma função que reage a um clique.
+Tarefa: Crie um arquivo script.js
+Escreva uma função mostrarMensagem() que: Pega um parágrafo com id="mensagem", Muda seu conteúdo com textContent, Conecte o arquivo JS ao HTML com <script src="script.js"></script>
+
+Atividade 4: Modificando a Mensagem
+Objetivo: Usar variáveis e lógica básica.
+Tarefa: Use uma variável nome no script.
+Ao clicar no botão, exiba: "Olá, [nome]! Seja bem-vindo(a)!"
+
+Atividade 5: Desafio – Crie sua "Página de Apresentação"
+Objetivo: Integrar HTML, CSS e JS em um mini-projeto.
+Tarefa:
+Crie uma página com: Seu nome (título), Uma descrição sobre você (parágrafos), Um botão “Me apresentar”, Ao clicar, aparece uma mensagem no parágrafo com seu nome e hobby.
+
+aula 03
+Exercício 01
+1. Operadores Algébricos
+Enunciado: Crie uma página com dois campos numéricos e um botão. Ao clicar no botão, mostre na tela: 
+Soma
+Subtração
+Multiplicação
+Divisão
+Resto da divisão
+Dica de implementação:
+HTML: <input type="number"> para os dois valores e <button> para executar.
+JS: Use +, -, *, / e %.
+CSS: Coloque margens para separar os resultados.
+
+Exercício 02
+2. Operadores Lógicos
+Enunciado: Crie um formulário onde o usuário digite idade e marque se possui CNH. Ao clicar em "Verificar", use operadores lógicos para: Mostrar "Pode dirigir" se idade ≥ 18 E tiver CNH. Mostrar "Não pode dirigir" nos outros casos.
+Dica de implementação:
+HTML: <input type="number"> para idade, <input type="checkbox"> para CNH.
+JS: Use &&, || e !.
+CSS: Mostre o resultado com cor verde (pode dirigir) ou vermelha (não pode).
+
+Exercício 03
+3. Operadores Relacionais
+Enunciado: Peça ao usuário dois números e mostre: Qual é maior, Qual é menor e Se são iguais
+Dica de implementação:
+JS: Use >, <, >=, <=, == e !=.
+CSS: Destaque o maior número com negrito.
+
+Desafio 1 – Calculadora de Média
+Conteúdo: Operadores algébricos
+Descrição: O usuário digita 3 notas. Ao clicar em "Calcular Média", a página mostra:
+Média das notas (com duas casas decimais)
+Situação: Aprovado (média ≥ 7), Recuperação (5 ≤ média < 7), Reprovado (média < 5) 
+Reforça: uso de + / e if/else.
+
+Desafio 2 – Acesso Permitido
+Conteúdo: Operadores lógicos
+Descrição:  O usuário informa se tem login e se tem senha (dois checkboxes). Se os dois estiverem marcados → "Acesso liberado" (verde), Caso contrário → "Acesso negado" (vermelho)
+Reforça: uso de &&, || e !.
+
+Desafio 3 – Comparar Três Números
+Conteúdo: Operadores relacionais
+Descrição: O usuário digita 3 números. Ao clicar em "Comparar": Mostra o maior número, Mostra o menor número, Mostra se há números iguais
+Reforça: uso de >, <, ==, != e múltiplos if.
+
+Aula 04
+Exercício 1: Tabuada
+Crie uma página que peça um número ao usuário e mostre a tabuada de 1 a 10.
+
+Exercício 2: Contagem Regressiva
+Mostre uma contagem de 10 até 1 em um alert.
+
+Exercício 3: Listar Nomes
+Crie um array com 5 nomes e mostre cada um na tela com for... of.
+
+Aula 06
+Exercício 01:
+Criar uma página onde:
+1. Existe uma matriz com notas de 3 alunos em 3 disciplinas.
+2. Mostrar os dados em formato de tabela HTML.
+3. Calcular a média de cada aluno e exibir junto.
+
+Exercicio 02:
+Crie uma matriz para armazenar as notas de 4 alunos em 3 provas.
+● Mostre todas as notas em forma de tabela (HTML).
+● Calcule a média de cada aluno.
+● Indique se o aluno está Aprovado (média ≥ 7) ou Reprovado.
+
+Exercicio 03:
+Monte uma matriz que guarde os dados de 3 produtos, cada um com: nome, preço e quantidade em estoque.
+● Mostre os produtos em formato de tabela.
+● Calcule o valor total em estoque (preço × quantidade).
+● Mostre o estoque total da loja (soma de todos os valores).
+Dica: cada linha da matriz pode representar um produto.
+
+Aula 07
+Exercicio 01:
+1) saudação personalizada (função simples)
+objetivo: criar e chamar uma função com parâmetro.
+instruções: crie saudacao(nome) que retorna “olá, {nome}!”. ao clicar no botão, leia o nome do input e mostre no <p>.
+
+Exercicio 02:
+2) Crie uma página em HTML, CSS e JavaScript que:
+1. Peça ao usuário que digite um número.
+2. Ao clicar em um botão, calcule o dobro desse número usando uma função em JavaScript.
+3. Mostre o resultado na tela, embaixo do botão.
+
+Exercicio 03:
+3) mini-calculadora (quatro funções)
+objetivo: treinar parâmetros e retorno.
+instruções: crie somar(a,b), subtrair(a,b), multiplicar(a,b), dividir(a,b). exiba os 4 resultados.
+
+Aula 09
+Vetores (Arrays)
+1. Soma dos Elementos
+Crie um vetor com 5 números e calcule a soma de todos os elementos usando um for.
+2. Maior e Menor Valor
+Peça ao usuário 5 números, armazene em um vetor e mostre o maior e o menor número.
+3. Contar Pares e Ímpares
+Crie um vetor com 10 números aleatórios entre 1 e 100 e mostre quantos são pares e quantos são ímpares.
+Matrizes (Arrays Multidimensionais)
+4. Tabela de Notas
+Crie uma matriz 3x3 com notas de 3 alunos em 3 provas. Mostre em tabela e calcule a média de cada aluno.
+5. Diagonal Principal
+Crie uma matriz 4x4 e mostre apenas os valores da diagonal principal (quando linha = coluna).
+6. Matriz Transposta
+Dada uma matriz 2x3, mostre sua transposta (linhas viram colunas).
+Funções
+7. Dobro de um Número
+Crie uma função dobro(x) que receba um número e retorne o dobro. Teste no navegador com um input.
+8. Calculadora
+Implemente quatro funções: somar(a,b), subtrair(a,b), multiplicar(a,b), dividir(a,b). Mostre os resultados na tela a partir de dois inputs.
+9. Média Aluno
+Crie uma função que receba um vetor de notas e retorne a média. Use para calcular a média de 3 alunos diferentes.
+Laços de Repetição (for / while)
+10. Tabuada (for)
+Peça ao usuário um número e mostre a tabuada de 1 a 10 usando for.
+11. Contagem Regressiva (while)
+Mostre no console uma contagem de 10 até 1 usando while.
+12. Somatório (while)
+Peça números ao usuário enquanto ele não digitar 0. Ao final, mostre a soma de todos os valores.
+
+Aula 10
+Crie uma página em HTML, CSS e JavaScript que permita cadastrar alunos.
+A cada cadastro, o usuário deve informar:
+● Nome do aluno
+● Nota 1, Nota 2 e Nota 3 (valores de 0 a 10) O programa deve:
+1. Calcular a média das três notas usando uma função.
+2. Determinar a situação do aluno:
+○ Aprovado (média ≥ 7)
+○ Recuperação (5 ≤ média < 7)
+○ Reprovado (média < 5)
+3. Mostrar os resultados em uma tabela HTML, listando todos os alunos já
+cadastrados.
+
+Aula 11
+Desafio: Criar uma página de apresentação pessoal
+● Deve conter:
+○ Título com nome.
+Imagem de perfil.
+Lista de hobbies ou interesses.
+Formulário simples de contato (nome, e-mail, botão).
+Estilo com CSS usando:
+■ classes e IDs.
+■ layout em flexbox ou grid.
+■ responsividade (mudança de cor ou layout em telas
+pequenas).
