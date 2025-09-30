@@ -14,5 +14,32 @@ https://www.youtube.com/watch?v=PGrPFi8qplw
 https://www.youtube.com/watch?v=Fhy-5CtVkiM
 https://www.youtube.com/watch?v=y4ltLH9iK8E
 https://www.youtube.com/watch?v=cudOY_pI2Fo
-
 site mimo para ajudar a fazer o html e css
+
+como utilizar o git / da sua maquina pro github
+
+1 - instala o git na maquina, se não ja tiver instalado.
+
+2 - abre o "Git Bash" configurar o git para vc:
+- git config --global user.name 'Wellington Rodrigues' clicar em enter;
+- git config --global user.email 'wellington87rodrigues@gmail.com' clica em enter.
+o passo 2 é para uma configuração inicial, não mudou nada ainda.
+
+3 - a pasta que vc quer enviar para o github(obs: não pode enviar pasta vazia), vc precisa entrar com ela no vscode. feito isso, clica no Crtl + j para abrir o terminal do vscode
+
+4 - no terminal digite: "git init" - feito isso iniciará um repositorório git na pasta que vc quer enviar para o github (obs: perceba que foi criado uma pasta oculta chamada .git na pasta que vc quer enviar para o github).
+
+5 - digite: "git add 'nomedoarquivo'"(esse comando serve para adicionarmos os arquivos para enviar ao github);
+"git add -A" : esse comando faz todas as mudanças que eu optei por fazer, inclusive deletar arquivo. envia todos os arquivos e pasta que esta dentro da pasta que vc quer enviar ao github. 
+"git add .": é igual ao comando anterior, porém ele não deleta.
+
+6 - digite: "git status" (esse comando mostra como está o status do seu branch, o branch principal é o main, o galho principal; mostra se tiver algum arquivo para fazer commit, se existir; e mostra os arquivos que tiver adicionado no git add, comando anterior).
+
+7 - digite "git commit -m 'descrição do commit'"
+
+8 - agora precisa ir no github, se não tiver uma conta, vc cria. se tiver uma conta, vc cria um repositório com o mesmo nome da pasta raiz que vc quer enviar para lá, da uma descrição ao seu repositório, descreva o que vc está desenvolvendo.
+
+9 - depois de criado, vc vai enviar a pasta com os arquivos para o github, vc copia esse codigo: https://github.com/wellington87rodrigues/Softex-FrontEnd.git
+modelo da cópia anterior: https://github.com/seunomeperfil/nomedasuapastacriada.git
+
+10 - agora vc digita: "git push -u origin main" para de fato enviar a sua pasta e arquivos para o github.(obs: se for a primeira vez que vc estiver fazendo subindo arquivos para o github, ele vai pedir para vc colocar seu usuário e senha do git, para autorizar o envio dos arquivos ao github. uma vez logado na maquina, não vai precisar logar novamente da proxima vez que vc quiser enviar um arquivo para o github).
