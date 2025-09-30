@@ -43,3 +43,69 @@ o passo 2 é para uma configuração inicial, não mudou nada ainda.
 modelo da cópia anterior: https://github.com/seunomeperfil/nomedasuapastacriada.git
 
 10 - agora vc digita: "git push -u origin main" para de fato enviar a sua pasta e arquivos para o github.(obs: se for a primeira vez que vc estiver fazendo subindo arquivos para o github, ele vai pedir para vc colocar seu usuário e senha do git, para autorizar o envio dos arquivos ao github. uma vez logado na maquina, não vai precisar logar novamente da proxima vez que vc quiser enviar um arquivo para o github).
+
+como utilizar o git / github para da sua maquina
+
+1 - para enviar o projeto do github pra sua maquina, o primeiro passo é digitar: "git clone 'nomedorepositório'", vc obtém o nome do repositório, indo no github, clicando no repositório que deseja, depois clica em <> code(o botão verde) e copia o link que vai aparecer. quando vc der o "git clone 'linkdorepositorio'" ele vai baixar o projeto completo para sua maquina.
+
+Git
+
+Git Setup
+
+instalar o git: https://git-scm.com/
+
+configurar Nome: $ git config --global user.name 'seunome'
+
+configurar Email: $ git config -- global user.email 'email@email.com' 
+
+Git Comandos
+
+$ git init : iniciar um repositório
+
+$ git add 'nomearquivo' : adicionar o arquivo ao repositório no git. 
+
+$ git add -A : adicionamos todos os arquivos ao repositório git. excluindo arquivo.
+
+$ git add . : adicionamos todos os arquivos ao repositório git. sem excluir arquivo.
+
+$ git status : mostrar os arquivos que tiveram mudanças.
+
+$ git commit sem texto: ao usar o $ git commit você entra no modo completo de comentário. com um editor de texto direto na linda de comnado. utilize esc + :wq para sair do mesmo.
+
+$ git commit -m 'Descrição' : irá fazer o commit do código adicionado com uma mensagem.
+
+Criar Repositório no GitHub
+
+GitHub : Criar conta https://github.com/
+
+novo repositório : https://github/new
+
+adicionar diretório remoto : $ git remote add origin https://github.com/seuusuario/seurepoisitorio.git
+
+push do primeiro commit : $ git push -u origin master
+
+Branching
+
+$ git branch 'nomebranch' : cria uma nova branch.
+
+$ git checkout 'nomebranch' : irá mudar de branch.
+
+$ git checkout -b 'novobranch', assim ele cria e muda de branch ao mesmo tempo.
+
+vc é um usuário novo e vai entrar agora no projeto ja em andamento:
+
+$ git clone 'nomeRepositório' : vc acha o nome do repositório na pasta tem o botão clone or download, clica nele e copia o link.
+
+$ git pull : vai baixar para sua maquina todo o arquivo do projeto que está online.
+
+$ git merge 'nomeRepositório' : quando tiver trabalhando em conjunto e outros desenvolvedores subiram as mudanças das funcionalidades para suas branch secundárias, utiliza o comando git merge para unir as mudanças a branch master.
+
+lidando com pull request
+
+no github : agora você possui um novo branch no github e pode fazer o pull request (juntar a master)
+
+compare e pull request : pode adicionar comentários. create pull Request.
+
+merge pull request : geralmente o líder do projeto / responsável por fazer o review do seu código. pode deletar o branch após o merge com o master.
+
+quando deletar o branch do GitHub ele ainda vai aparecer na minha maquina. se eu der um git pull atualizando o meu código local com o código que está no GitHub, ainda assim, a branch criada, vai constar na minha maquina. o código para excluir a branch da minha maquina é $ git branch -d 'nomedobranch'.
